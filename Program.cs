@@ -12,7 +12,6 @@ Console.WriteLine("Circle - 1; Pryamougolnik - 2; Triangle - 3");
 
 objectselection = Convert.ToInt32(Console.ReadLine());
 
-
 switch (objectselection)
 {
     case 1:
@@ -25,7 +24,7 @@ switch (objectselection)
         pryamoH = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Введите Ширину прямоугольника");
         pryamoW = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("S Прямоугольника = " + pryamoH * 2 + pryamoW * 2);
+        Console.WriteLine("S Прямоугольника = " + pryamoH * pryamoW);
         break;
     case 3:
         Console.WriteLine("Введите Длину Основания Треугольника");
@@ -33,6 +32,9 @@ switch (objectselection)
         Console.WriteLine("Введите Высоту Треугольника");
         TriangleH = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("S Треугольника = " + (TriangleOsn * TriangleH) / 2);
+        break;
+    default:
+        Console.WriteLine("Вы выбрали неверное число.");
         break;
 }
 Console.WriteLine("Программа завершится через 5 секунд.");
